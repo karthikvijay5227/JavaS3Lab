@@ -1,4 +1,4 @@
-//Java program to print factor of given number
+//6.Java program to print factor of given number.
 
 import java.util.*;
 
