@@ -1,4 +1,4 @@
-//Java program to print factorial of first n numbers.
+//8.Java program to print factorial of first n numbers.
 
 import java.util.*;
 
