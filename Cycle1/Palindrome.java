@@ -1,4 +1,4 @@
-//Java program to check whether a number is palindrome or not.
+//9.Java program to check whether a number is palindrome or not.
 
 import java.util.*;
 
