@@ -1,4 +1,4 @@
-//Java prgram to add two numbers.
+//2.Java prgram to add two numbers.
 
 import java.util.*;
 class Sum
