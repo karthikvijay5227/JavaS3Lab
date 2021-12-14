@@ -1,4 +1,4 @@
-//Java program to check whether a number is prime or not.
+//4.Java program to check whether a number is prime or not.
 
 import java.util.*;
 
