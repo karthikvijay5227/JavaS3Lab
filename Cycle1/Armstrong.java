@@ -1,4 +1,4 @@
-//Java program to check whether a number is armstrong or not.
+//10.Java program to check whether a number is armstrong or not.
 
 import java.util.*;
 import java.lang.*;
