@@ -1,4 +1,4 @@
-//Java program to print the sum of first n natural numbers.
+//5.Java program to print the sum of first n natural numbers.
 
 import java.util.*;
 
