@@ -5,13 +5,13 @@ class Perimeter
 
  Perimeter(int l,int b)
  {
-  int area=l*b;
-  System.out.println("Area is:"+area);
+  int per=2*(l+b);
+  System.out.println("Perimeter is:"+per);
  }
  Perimeter(int r)
  {
-  float area=(float)(3.14*r*r);
-  System.out.println("Area is:"+area);
+  float per=(float)(3.14*2*r);
+  System.out.println("Perimeter is:"+per);
  }
  public static void main(String args[])
  {
