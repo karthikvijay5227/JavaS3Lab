@@ -1,1 +1,1 @@
-This contains programs for cycle 4 java .
+This is Cycle 4 for Java S3 Lab.
