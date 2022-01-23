@@ -17,7 +17,6 @@ class Calc
  
 void Factorial(int n)
  {
-  Calc c1=new Calc();
   int fact=1;
   for(int i=1;i<=n;i++)
   {
