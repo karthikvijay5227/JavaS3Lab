@@ -6,7 +6,6 @@ class Student
  void Read()
  {
   Scanner sc=new Scanner(System.in);
-  Student s=new Student();
   int rno;
   String name;
   int marks[]=new int[5];
@@ -22,7 +21,7 @@ class Student
    System.out.println("Enter marks of Sub"+(i+1));
    marks[i]=sc.nextInt();
   }
-  s.Display(name,rno,marks);
+  Display(name,rno,marks);
  }
  
  void Display(String name,int rno,int marks[])
