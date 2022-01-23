@@ -1,4 +1,4 @@
-#This is Cycle 3 for Java S3 Lab.
+# This is Cycle 3 for Java S3 Lab.
 
 1. Program to create a student class with name, roll no and marks of five subjects. Write functions to read and display the details.
 
