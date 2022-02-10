@@ -6,7 +6,7 @@ class Experiment2
   try
   {
    FileInputStream fin=new FileInputStream("Exp2.txt");
-   int i,c=0,l=0,w=0;
+   int i,c=-1,l=0,w=0;
    while((i=fin.read())!=-1)
    {
     c++;
