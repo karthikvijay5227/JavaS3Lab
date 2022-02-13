@@ -21,7 +21,6 @@ class Cube extends Thread
 	}
 	public void run()
 	{
-             int b=this.n*this.n*this.n;
 	     System.out.println("Cube is:"+b);
 	}
 }
