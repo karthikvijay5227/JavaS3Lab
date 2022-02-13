@@ -9,7 +9,7 @@ class Square extends Thread
 	}	
     public void run()
   	{
-  	     int a=Math.pow(this.n,2);	
+  	     int a=(int)Math.pow(this.n,2);	
 	     System.out.println("Square is:"+a);
   	} 
 }
@@ -22,7 +22,7 @@ class Cube extends Thread
 	}
 	public void run()
 	{
-	     int b=Math.pow(this.n,3);
+	     int b=(int)Math.pow(this.n,3);
 	     System.out.println("Cube is:"+b);
 	}
 }
