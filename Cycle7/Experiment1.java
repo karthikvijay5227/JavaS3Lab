@@ -8,8 +8,8 @@ class Square extends Thread
 	}	
     public void run()
   	{
-  	  int a=this.n*this.n;	
-		System.out.println("Square is:"+a);
+  	     int a=this.n*this.n;	
+	     System.out.println("Square is:"+a);
   	} 
 }
 class Cube extends Thread
@@ -21,8 +21,8 @@ class Cube extends Thread
 	}
 	public void run()
 	{
-		int b=this.n*this.n*this.n;
-		System.out.println("Cube is:"+b);
+              int b=this.n*this.n*this.n;
+	      System.out.println("Cube is:"+b);
 	}
 }
 
@@ -34,34 +34,36 @@ class Calc extends Thread
 	  int n;
 	  System.out.print("Enter no of times to do:"); 
 	  n=sc.nextInt();
+
 	  System.out.print("Enter the range of random numbers:");
 	  int range=sc.nextInt();
+
 	  Random r=new Random();
 	  for(int I=0;I<n;I++)
 	  {
-   	int x=r.nextInt(range);
-   	System.out.println();
- 	 System.out.println("The random number is:"+x);
-   	if(x%2==0)
-  	{
+   	   int x=r.nextInt(range);
+   	   System.out.println();
+ 	   System.out.println("The random number is:"+x);
+   	   if(x%2==0)
+  	   {
 		Square s=new Square(x);
-		s.start();
-  	}
- 	else
-      {
-    	Cube cu=new Cube(x);
-    	cu.start();
-      }
-    try
-    {
-      Thread.sleep(1000);
-    }
-    catch(Exception e)
-    {
-      System.out.println(e);
-    }
-   }     
-}
+	 	s.start();
+  	   }
+ 	   else
+           {
+    	        Cube cu=new Cube(x);
+    	        cu.start();
+           }
+           try
+           {
+                Thread.sleep(1000);
+           }
+           catch(Exception e)
+           {
+                System.out.println(e);
+           }
+         }     
+       }
 }	
  public class Experiment1
  {
