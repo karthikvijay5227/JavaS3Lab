@@ -1,4 +1,5 @@
 import java.util.*;
+import java.lang.*;
 class Square extends Thread
 {
 	int n;	
@@ -8,7 +9,7 @@ class Square extends Thread
 	}	
     public void run()
   	{
-  	     int a=this.n*this.n;	
+  	     int a=Math.pow(this.n,2);	
 	     System.out.println("Square is:"+a);
   	} 
 }
@@ -21,6 +22,7 @@ class Cube extends Thread
 	}
 	public void run()
 	{
+	     int b=Math.pow(this.n,3);
 	     System.out.println("Cube is:"+b);
 	}
 }
