@@ -1,29 +1,30 @@
 import java.util.*;
-public class DoubleList{
-	class Node
+public class DoubleList
+{
+  class Node
+  {
+    int info;
+    Node prev,next;
+    public Node(int item)
     {
-    	int info;
-    	Node prev,next;
-    	public Node(int item)
-    	{
-    		this.info=item;
-    	}
+    	this.info=item;
     }
-    static Node head=null,tail=null,p;
-    void InsertFirst(int val)
-   {
-	  p=new Node(val);
+  }
+  static Node head=null,tail=null,p;
+  void InsertFirst(int val)
+  {
+	p=new Node(val);
   	p.next=head;
-	  if(head==null)
-	     head=tail=p;
-	  else
-     {
-    	head.prev=p;
-    	head=p;
-     }
-   }
+	if(head==null)
+	   head=tail=p;
+	else
+        {
+    	  head.prev=p;
+    	  head=p;
+        }
+  }
     
-   void InsertAfter(int item,int item1)
+  void InsertAfter(int item,int item1)
   {
 	Node curr=head;
 	while(curr!=null && curr.info!=item1)
@@ -33,18 +34,17 @@ public class DoubleList{
 	if(curr==null)
 	   System.out.printf("No such element or node");
 	else
-    {
-    	p=new Node(item);
-    	p.prev=curr;
-    	p.next=curr.next;
-    	if(curr==tail)
-    	   tail=p;
-    	else
-           curr.next.prev=p;
-        curr.next=p;
-
-    }
-}
+        {
+    	  p=new Node(item);
+    	  p.prev=curr;
+    	  p.next=curr.next;
+    	  if(curr==tail)
+    	     tail=p;
+    	  else
+             curr.next.prev=p;
+          curr.next=p;
+        }
+  }
 
  void InsertBefore(int item,int item1)
  {
@@ -54,17 +54,17 @@ public class DoubleList{
 	 if(curr==null)
 	    System.out.printf("No such node or element");
 	 else
-     {
-     	p=new Node(item);
-     	p.prev=curr.prev;
-     	p.next=curr;
-     	if(curr==head)
-     	  head=p;
-     	else
-          curr.prev.next=p;
-        curr.prev=p;
-     } 
-}	
+         {
+     	  p=new Node(item);
+     	  p.prev=curr.prev;
+     	  p.next=curr;
+     	  if(curr==head)
+     	     head=p;
+     	  else
+             curr.prev.next=p;
+          curr.prev=p;
+         } 
+ }	
 
 void TraverseRight(Node head)
 {
@@ -75,7 +75,7 @@ void TraverseRight(Node head)
 		curr=curr.next;
 		if(curr!=null)
 		  System.out.printf("-->");
-    }
+        }
 } 
 
 void TraverseLeft(Node tail)
@@ -95,9 +95,9 @@ void Delete(int item)
 {
   Node curr=head;
   while(curr!=null && curr.info != item)
-		curr = curr.next;
+	curr = curr.next;
   if(curr == null)
-		System.out.printf("No such element or node");
+	System.out.printf("No such element or node");
 	else 
 	{
 		if(curr == head)
@@ -108,18 +108,18 @@ void Delete(int item)
 		   tail = curr.prev;
 		else
 		   curr.next.prev=curr.prev;
-    }
+        }
 }		
  public static void main(String[] args) 
 {
-		Scanner sc=new Scanner(System.in);
-		DoubleList d=new DoubleList();
-		int ch,po,it;
-       do
-      {
+  Scanner sc=new Scanner(System.in);
+  DoubleList d=new DoubleList();
+  int ch,po,it;
+  do
+  {
        System.out.printf("\nDoubly LinkedList Operations are:\n");
        System.out.printf("\n1.Insfirst\n2.InsAfter\n3.InsBefore\n4.TraverseRight\n5.TraverseLeft\n6.Delete\n7.Exit\n");
-      System.out.printf("\nEnter your choice:\n");
+       System.out.printf("\nEnter your choice:\n");
        ch=sc.nextInt();
        switch(ch)
        { 
@@ -157,8 +157,8 @@ void Delete(int item)
          case 7:break;
 
          default:System.out.printf("Invalid choice");
-        }
+       }
     }while(ch!=7);
     sc.close(); 
-	}
+  }
 }
