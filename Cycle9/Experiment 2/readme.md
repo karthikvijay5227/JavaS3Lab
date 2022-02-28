@@ -1,1 +1,1 @@
-Experiment 2 of Cycle 9 Java S3 Lab.
+Contains program,output screenshot of Experiment2.
